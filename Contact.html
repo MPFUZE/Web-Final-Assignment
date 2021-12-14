@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <link rel="stylesheet" href="contact.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+<h1>Please share your information with us:-</h1>
+<label> Name :</label>
+<input type="text" name="name" placeholder="Enter Your Name" /><br></br>
+<label> Email Address :</label>
+<input type="email" name="Email Address" placeholder="Enter Your Email Address" /><br></br>
+<label> City :</label>
+<input type="text" name="City" placeholder="Enter Your City" /><br></br>
+<label> Postal Code :</label>
+<input type="" name="name" pattern="[A-Za-z][0-9][A-Za-z] [0-9][A-Za-z][0-9]" placeholder="Enter a Valid Postal Code" /><br></br>
+<div class="col-6">
+    <textarea type="text" class="input" placeholder="Write a comment" v-model="newItem" @keyup.enter="addItem()"></textarea>
+        <button v-on:click="addItem()" class='primaryContained float-right'  type="submit">Add Comment </button>
+      </div><form></br> </br>
+    <input type="submit" value="Submit">    
+</form>
+<p>&copy; Manav Dipak Patel</p>
+
+</body>
+</html>
